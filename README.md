@@ -1,0 +1,2 @@
+# slowdns
+slowdns tunnel
