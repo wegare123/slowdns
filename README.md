@@ -2,10 +2,11 @@
 wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/slowdns/main/install.sh" -O ~/install.sh && chmod 777 ~/install.sh && ~/./install.sh
 
 # tutorial build dns-client
-1. opkg update && opkg install golang ar wget
-2. wget --no-check-certificate "https://www.dropbox.com/s/rdbxsrj0dhbyyi5/dns-client.zip" -O ~/ekstrak.zip && unzip ~/ekstrak.zip && rm -rf ~/ekstrak.zip && cd ~/dns-client && cd dnstt-client
-3. ar -rc /usr/lib/libpthread.a
-4. go build && mv dnstt-client /usr/bin/dns-client && chmod +x /usr/bin/dns-client && rm -rf ~/dns-client && rm -rf ~/go && opkg remove golang && cd ~/
+1. install terlebih dahulu slowdns
+2. opkg update && opkg install golang ar wget
+3. wget --no-check-certificate "https://www.dropbox.com/s/rdbxsrj0dhbyyi5/dns-client.zip" -O ~/ekstrak.zip && unzip ~/ekstrak.zip && rm -rf ~/ekstrak.zip && cd ~/dns-client && cd dnstt-client
+4. ar -rc /usr/lib/libpthread.a
+5. go build && mv dnstt-client /usr/bin/dns-client && chmod +x /usr/bin/dns-client && rm -rf ~/dns-client && rm -rf ~/go && opkg remove golang && cd ~/
 
 
 # catatan
