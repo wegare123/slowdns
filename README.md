@@ -1,5 +1,14 @@
 # slowdns
 wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/slowdns/main/install.sh" -O ~/install.sh && chmod 777 ~/install.sh && ~/./install.sh
 
+# tutorial build dns-client
+1 opkg update && opkg install golang ar
+2 opkg remove git
+3 opkg install git-http
+4 wget --no-check-certificate "https://www.dropbox.com/s/rdbxsrj0dhbyyi5/dns-client.zip" -O ~/ekstrak.zip && unzip ~/ekstrak.zip && rm -rf ~/ekstrak.zip && cd ~/dns-client && cd dnstt-client
+5 ar -rc /usr/lib/libpthread.a
+6 go build && mv dnstt-client /usr/bin/dns-client && chmod +x /usr/bin/dns-client && rm -rf ~/dns-client && rm -rf ~/go && opkg remove golang && cd ~/
+
+
 # catatan
 jika mengganti profile atau inject ulang dan lain-lain jangan lupa stop inject (pilih no 3) & disable auto rekonek & auto booting (pilih no 5) terlebih dahulu agar tidak bentrok
