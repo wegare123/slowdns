@@ -35,7 +35,7 @@ exit
 fi
 wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/slowdns/main/slowdns.sh" -O /usr/bin/slowdns
 wget --no-check-certificate "https://raw.githubusercontent.com/wegare123/slowdns/main/autorekonek-slowdns.sh" -O /usr/bin/autorekonek-slowdns
-wget --no-check-certificate "https://github.com/wegare123/slowdns/blob/main/dns-client-v19" -O /usr/bin/dns-client
+wget --no-check-certificate "https://github.com/wegare123/slowdns/blob/main/dns-client-v19?raw=true" -O /usr/bin/dns-client
 chmod +x /usr/bin/slowdns
 chmod +x /usr/bin/dns-client
 chmod +x /usr/bin/autorekonek-slowdns
