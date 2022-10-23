@@ -80,7 +80,7 @@ user="$(cat /root/akun/slowdns.txt | tr '\n' ' '  | awk '{print $2}')"
 pass="$(cat /root/akun/slowdns.txt | tr '\n' ' '  | awk '{print $3}')" 
 ns="$(cat /root/akun/slowdns.txt | tr '\n' ' '  | awk '{print $4}')" 
 route="$(cat /root/akun/ipmodem.txt | grep -i ipmodem | cut -d= -f2 | tail -n1)"
-dns-client -udp 1.1.1.1:53 -pubkey-file /root/akun/server.pub $ns 127.0.0.1:2222 &
+nohup dns-client -udp 1.1.1.1:53 -pubkey-file /root/akun/server.pub $ns 127.0.0.1:2222 > /dev/null 2>&1 &
 sleep 3
 sshpass -p $pass ssh -N -D 127.0.0.1:1080 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o HostKeyAlias=$host -p 2222 "$user"@127.0.0.1 &
 sleep 5
