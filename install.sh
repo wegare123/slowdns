@@ -39,7 +39,7 @@ wget --no-check-certificate "https://github.com/wegare123/slowdns/blob/main/dns-
 chmod +x /usr/bin/slowdns
 chmod +x /usr/bin/dns-client
 chmod +x /usr/bin/autorekonek-slowdns
-opkg install openvpn-openssl && opkg install ip-full && opkg install openssh-client && opkg install --force-depends *.ipk && opkg install lsof && opkg install fping screen python python3 coreutils-nohup
+opkg install openvpn-openssl && opkg install ip-full && opkg install openssh-client && opkg install --force-depends *.ipk && opkg install lsof && opkg install httping screen python python3 coreutils-nohup
 rm -r ~/*.ipk
 rm -r ~/install.sh
 mkdir -p ~/akun/
